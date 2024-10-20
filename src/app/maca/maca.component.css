@@ -1,0 +1,28 @@
+.maca-container {
+  background-color: #f0e68c;
+  border: 2px solid #ff69b4;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #ff69b4;
+  margin: 180px;
+  margin-left: -170px;
+  width: 320px;
+  height: 320px;
+}
+
+.nombre {
+  color: #ff4500;
+  font-size: 24px;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+.descripcion {
+  font-size: 16px;
+  color: #000;
+}
+
+.imagen-personaje {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+}

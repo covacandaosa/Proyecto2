@@ -1,0 +1,28 @@
+.eigor-container {
+  background-color: #696969;
+  border: 2px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #696969;
+  margin: 180px;
+  margin-left: -170px;
+  width: 320px;
+  height: 320px;
+}
+
+.nombre {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.descripcion {
+  font-size: 16px;
+  color: #fff;
+}
+
+.imagen-personaje {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}

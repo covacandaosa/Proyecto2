@@ -1,0 +1,77 @@
+.contenedor {
+  display: flex;
+  color: #ffd700;
+
+}
+
+.titulo-personaje {
+  text-align: left;
+}
+
+.contenido {
+  display: flex;
+  flex: content;
+
+}
+
+.personajes {
+  width: 39%;
+  border-right: 1px solid #ffd700;
+  padding-right: 400px;
+}
+
+.mapas-contenedor {
+  width: 65%;
+  padding-left: 20px;
+}
+
+.mapa-detalles {
+  margin-top: 20px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mapas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mapa {
+  cursor: pointer;
+  text-align: center;
+}
+
+.imagen-pequeña {
+  width: 170px;
+  height: 170px;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+
+.imagen-pequeña:hover {
+  transform: scale(1.05);
+}
+
+.imagen-grande {
+  width: 400%;
+  border-radius: 30px;
+}
+
+.boton-navegacion {
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: -470px;
+  margin-top: 10px;
+}
+
+.boton-navegacion:hover {
+  background-color: #ffc700;
+
+}

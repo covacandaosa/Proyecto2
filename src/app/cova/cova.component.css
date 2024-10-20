@@ -1,0 +1,29 @@
+.cova-container {
+    background-color: #ffcccb;
+    border: 2px solid #dc143c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #dc143c;
+    margin: 180px;
+    margin-left: -170px;
+    width: 320px;
+    height: 320px;
+}
+
+.nombre {
+    color: #c0c0c0;
+    font-size: 24px;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #000;
+}
+
+.imagen-personaje {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid #dc143c;
+}

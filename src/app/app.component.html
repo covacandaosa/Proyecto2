@@ -1,0 +1,40 @@
+<div class="contenedor"><!--SELECCIÓN DE PERSONAJE-->
+  <h1 style="color: #ffd700; text-align:right;">Selecciona tu Personaje:</h1>
+
+  <div class="contenido">
+    <div class="personajes">
+      <ng-container [ngSwitch]="personajeSeleccionado">
+        <app-elara *ngSwitchCase="'elara'"></app-elara>
+        <app-aquael *ngSwitchCase="'aquael'"></app-aquael>
+        <app-ignis *ngSwitchCase="'ignis'"></app-ignis>
+        <app-eigor *ngSwitchCase="'eigor'"></app-eigor>
+        <app-hippie *ngSwitchCase="'hippie'"></app-hippie>
+        <app-maca *ngSwitchCase="'maca'"></app-maca>
+        <app-cova *ngSwitchCase="'cova'"></app-cova>
+      </ng-container>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <div class="mapas-contenedor">
+      <h1>Mapas del Juego</h1><!--MAPAS DEL JUEGO (PEQUEÑO)-->
+      <div class="mapas">
+        <div *ngFor="let mapa of mapas" class="mapa" (click)="openMap(mapa)">
+          <img [src]="mapa.imagenPreview" alt="{{ mapa.nombre }}" class="imagen-pequeña">
+          <p>{{ mapa.nombre }}</p>
+        </div>
+      </div>
+
+      <div class="mapa-detalles" *ngIf="mapaSeleccionado"><!--MAPAS DEL JUEGO SE ABRE (GRANDE) + DESCRIPCIÓN-->
+        <h2>{{ mapaSeleccionado.nombre }}</h2>
+        <img [src]="mapaSeleccionado.imagenGrande" alt="{{ mapaSeleccionado.nombre }}" class="imagen-grande">
+        <p>{{ mapaSeleccionado.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navegacion"><!--ANTERIOR Y SIGUIENTE-->
+    <button (click)="anteriorPersonaje()" class="boton-navegacion">Anterior</button>
+    <button (click)="siguientePersonaje()" class="boton-navegacion">Siguiente</button>
+  </div>
+</div>
